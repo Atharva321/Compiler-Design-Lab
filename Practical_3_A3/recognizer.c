@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<string.h>
 #include<stdlib.h>
 void main()
@@ -8,7 +7,7 @@ char s[20],c;
 int state=0,i=0;
 
 printf("\n Enter a string:");
-gets(s);
+scanf("%s", s);
 while(s[i]!='\0')
 {
 switch(state)
@@ -71,5 +70,4 @@ else if((state==2)||(state==4))
 printf("\n %s is accepted under rule 'a*b+'",s);
 else if(state==5)
 printf("\n %s is accepted under rule 'abb'",s);
-getch();
 }
